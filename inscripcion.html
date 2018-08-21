@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<!-- Identificar dispositovo -->
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- Vincular css bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Vincular css propio -->
+	<link rel="stylesheet" href="css/estilos.css">
+	
+	<!-- vincular js bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- vincular jquery -->
+	<script src="js/jquery.js"></script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Postulación de Empleo</h1>
+		</div>
+	</header>
+	
+	<div class="container">
+		<form action="regCompleto.html" class="" method="post">
+			<br>
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input class="form-control" oninput="validacion('nombre')" type="text" id="nombre" name="nombre" placeholder="Nombre" required/>	
+			</div>
+			
+			
+			<div class="form-group">
+				<label for="apellido">Apellido:</label>
+				<input class="form-control" type="text" id="apellido" placeholder="Apellido"/>
+			</div>
+			
+			<div class="form-group"> 
+				<label for="rut dv">Rut:</label>
+				<input class="form-control" type="text" id="rut" placeholder="Rut: 1111111-1"/>
+			</div>
+			
+			<div class="form-group">
+				<label for="correo">Correo:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+					<input class="form-control" id="correo" type="email" placeholder="email@correo.cl"></input>
+				</div>
+			</div>
+			
+			<div class="form-group"> 
+				<label for="option">Selecciona ciudad a la que postulas:</label>
+				<select class="form-control" name="" id="option">
+					<option value="5">Valparaiso</option>
+					<option value="13">Santiago</option>
+					<option value="6">Rancagua</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="mensaje">¿Por que seleccionarlo?:</label>
+				<textarea class="form-control" id="mensaje" placeholder="Comentario"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<label for="archivo">Adjuntar curriculum:</label>
+				<input type="file" id="archivo"/>
+				<p class="help-block">Maximo 50MB</p>
+			</div>
+			
+
+			
+			<button class="btn btn-primary">Enviar</button>
+			<input type="button" class="btn btn-primary pull-right" value="<< Volver" onClick="window.location.href='index.html'"></input>
+			
+		</form>
+	</div>
+	
+</body>
+</html>

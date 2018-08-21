@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<!-- Identificar dispositovo -->
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- Vincular css bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Vincular css propio -->
+	<link rel="stylesheet" href="css/estilos.css">
+	
+	<!-- vincular jquery -->
+	<script src="js/jquery.js"></script>
+	
+	<!-- Vincular script js propio -->
+	<script src="js/script.js"></script>
+	
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;Alertas en Bootstrap</h1>
+		</div>
+	</header>
+	<br/>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="numero1">Numero 1:</label>
+					<input type="text" class="form-control" id="numero1" placeholder="Numero 1"></input>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="numero2">Numero 2:</label>
+					<input type="text" class="form-control" id="numero2" placeholder="Numero 2"></input>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-4"></div>
+			
+			<div class="col-md-1">
+				<button class="btn btn-success" onclick="suma();"><spam class="glyphicon glyphicon-plus"></spam></button>
+			</div>
+			<div class="col-md-1">
+				<button class="btn btn-success" onclick="resta();"><spam class="glyphicon glyphicon-minus"></spam></button>
+			</div>
+			<div class="col-md-1">
+				<button class="btn btn-success" onclick="divide();"><spam class="glyphicon glyphicon-resize-full"></spam></button>
+			</div>
+			<div class="col-md-1">
+				<button class="btn btn-success" onclick="multiplica();"><spam class="glyphicon glyphicon-th"></spam></button>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="resultado">Resultado:</label>
+					<input type="text" class="form-control" id="resultado" placeholder="Resultado"></input>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<button class="btn btn-block btn-warning" onclick="alerta();"><spam class="glyphicon glyphicon-warning-sign"></spam></button>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<input type="button" class="btn btn-primary pull-right" value="<< Volver" onClick="window.location.href='index.html'"></input>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- vincular js bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
